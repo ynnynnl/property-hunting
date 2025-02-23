@@ -1,0 +1,151 @@
+/* General Container */
+.property-detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Back Button */
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Header */
+.property-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Content Wrapper */
+.property-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+/* Left Side: Image Gallery */
+.property-gallery {
+  flex: 1;
+  max-width: 450px; /* Slightly larger for better visual balance */
+}
+
+.slider-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.property-gallery-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-gallery-image:hover {
+  transform: scale(1.02);
+}
+
+/* Right Side: Property Info */
+.property-info {
+  flex: 2;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.property-info h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #222;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.property-info p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.property-info strong {
+  color: #222;
+}
+
+/* Description */
+.property-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 12px;
+  padding: 10px;
+  background: #fff;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .property-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .property-gallery {
+    max-width: 100%;
+  }
+
+  .property-gallery-image {
+    height: 250px;
+  }
+
+  .property-info {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-header h2 {
+    font-size: 22px;
+  }
+
+  .property-gallery-image {
+    height: 220px;
+  }
+
+  .property-info h3 {
+    font-size: 20px;
+  }
+
+  .property-info p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,18 @@
+/* Importing a premium font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Modern, premium-looking font */
+    text-rendering: optimizeLegibility; /* Enhances font clarity */
+    -webkit-font-smoothing: antialiased; /* Smooths font on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Improves readability on macOS */
+}
+
+html {
+    font-size: 16px; /* Standardized base size for better scaling */
+    color: #333; /* Dark gray for a more premium feel */
+    background-color: #f8f9fa; /* Light gray for a soft, clean background */
+}

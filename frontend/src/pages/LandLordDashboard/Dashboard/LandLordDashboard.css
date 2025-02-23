@@ -1,0 +1,195 @@
+/* Container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 12px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: #34495e;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.sidebar li:hover, .sidebar li:active {
+    background: #007bff;
+}
+
+.sidebar ul li:hover, .sidebar ul li.active {
+    background: #007bff;
+}
+
+.sidebar .logout {
+    background: #e74c3c;
+    margin-top: auto;
+}
+
+.sidebar .logout:hover {
+    background: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #ecf0f1;
+    overflow-y: auto;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-section h2 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+.profile-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+}
+
+.profile-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.profile-button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.profile-button:hover {
+    background: #0056b3;
+}
+
+/* Add the username styling here */
+.profile-section .username {
+    font-size: 24px; /* Adjust this value for the desired size */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Change Password Section */
+.change-password-section {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.change-password-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.change-password-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.change-password-section button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.change-password-section button:hover {
+    background: #0056b3;
+}
+
+/* Buttons */
+button {
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Loading Message */
+.main-content h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}

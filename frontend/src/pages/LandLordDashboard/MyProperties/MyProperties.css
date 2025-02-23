@@ -1,0 +1,193 @@
+/* General container styling */
+.my-properties-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  margin: 5px 0;
+  cursor: pointer;
+  background: #34495e;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.sidebar ul li:hover, 
+.sidebar ul li.active {
+  background: #007bff;
+}
+
+/* Logout button */
+.sidebar .logout {
+  background: #e74c3c;
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.sidebar .logout:hover {
+  background: #c0392b;
+}
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #ecf0f1;
+  overflow-y: auto;
+}
+
+.search-filter-container {
+  margin-bottom: 20px;
+}
+
+.search-filter-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Property grid */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.property-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-card:hover {
+  transform: scale(1.03);
+}
+
+.property-images {
+  height: 200px;
+  overflow: hidden;
+}
+
+.property-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-details {
+  padding: 15px;
+}
+
+.property-details h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.property-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Property actions */
+.property-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-actions button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Action buttons */
+.view-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* No properties message */
+.no-properties-message {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-properties-message p {
+  margin-bottom: 10px;
+}
+
+.no-properties-message button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.no-properties-message button:hover {
+  background-color: #0056b3;
+}

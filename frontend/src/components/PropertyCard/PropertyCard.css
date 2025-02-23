@@ -1,0 +1,24 @@
+.property-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .property-card-details h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .property-card-details p {
+    margin: 5px 0;
+  }
+  

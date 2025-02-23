@@ -1,0 +1,265 @@
+/* General Layout for Register Page */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures full viewport height */
+  background-color: #f4f4f4;
+  padding: 20px;
+  flex-direction: column;
+  margin: 0; /* Removed margin to avoid reducing height */
+  width: 100%;
+}
+
+.register-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+  background: #f8f8f8;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Input field inside the wrapper */
+.input-wrapper input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Focus effect for inputs */
+.input-wrapper input:focus {
+  border-color: #007bff;
+}
+
+/* Contact Number Field */
+.contact-number-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background: #f8f8f8;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-number-wrapper input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Phone Icon */
+.phone-icon {
+  color: #777;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Role Selection Dropdown */
+.input-wrapper select {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Icon Styling */
+.role-icon {
+  color: #777;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Style for dropdown options */
+.input-wrapper select option {
+  background: #fff;
+  color: #333;
+}
+
+/* Hover and focus styles */
+.input-wrapper:hover,
+.input-wrapper:focus-within,
+.contact-number-wrapper:hover,
+.contact-number-wrapper:focus-within {
+  border-color: #007bff; /* Highlight on focus */
+}
+
+/* Terms & Agreement Checkbox */
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.terms-container input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.terms-container label {
+  cursor: pointer;
+}
+
+/* Register Button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Signup Link */
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-link span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Password Strength Indicator */
+.very-weak {
+  color: #ff0000;
+}
+
+.weak {
+  color: #ff8000;
+}
+
+.fair {
+  color: #ffff00;
+}
+
+.strong {
+  color: #80cc00;
+}
+
+.very-strong {
+  color: #00cc00;
+}
+
+/* Progress Bar Styling */
+progress {
+  width: 100%;
+  height: 8px;
+}
+
+progress[value="0"] {
+  background-color: #ff0000;
+}
+
+progress[value="1"] {
+  background-color: #ff8000;
+}
+
+progress[value="2"] {
+  background-color: #ffff00;
+}
+
+progress[value="3"] {
+  background-color: #80cc00;
+}
+
+progress[value="4"] {
+  background-color: #00cc00;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .register-page {
+      padding: 15px;
+  }
+
+  .register-form {
+      padding: 20px;
+      width: 100%;
+      max-width: 350px;
+  }
+
+  .register-page h1 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+  }
+
+  .input-group label {
+      font-size: 0.9rem;
+  }
+
+  .input-wrapper input,
+  .contact-number-wrapper input {
+      font-size: 0.95rem;
+  }
+
+  .register-btn {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  .signup-link span {
+      font-size: 0.9rem;
+  }
+}

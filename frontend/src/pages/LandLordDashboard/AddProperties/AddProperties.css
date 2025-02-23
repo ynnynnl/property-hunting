@@ -1,0 +1,196 @@
+/* Form Container Styles */
+.add-property-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.add-property-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Form Elements Styles */
+.add-property-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field,
+.textarea-field,
+.select-field {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input-field:focus,
+.textarea-field:focus,
+.select-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Select Field Customization */
+.select-field {
+    position: relative;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='5 10 10 15 15 10'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.select-field:hover {
+    background-color: #f8f9fa;
+}
+
+/* Text Area Styles */
+.textarea-field {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+    line-height: 1.5;
+}
+
+/* Image Preview Styles */
+.image-preview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+/* Checkbox and Radio Group Styles */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+    color: #444;
+}
+
+/* File Input Styles */
+.file-input-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.file-input-label:hover {
+    background-color: #0056b3;
+}
+
+/* Submit Button Styles */
+.submit-button {
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Required Field Indicator */
+.required::after {
+    content: "*";
+    color: #e74c3c;
+    margin-left: 4px;
+    font-size: 0.8rem;
+}
+
+/* Label Styles */
+.add-property-container label {
+    display: block;
+    margin: 8px 0 4px 0;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Conditional Field Styles */
+.conditional-field {
+    margin-top: 0.5rem;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+.add-property-container form {
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-property-container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .add-property-container h2 {
+        font-size: 20px;
+    }
+
+    .input-field,
+    .textarea-field,
+    .select-field {
+        padding: 10px;
+    }
+}
